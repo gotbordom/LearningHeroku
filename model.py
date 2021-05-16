@@ -81,8 +81,9 @@ lr.proba = lr.predict_proba(X)
 
 
 
-@app.route('/')
-def index():
+@app.route("/", methods=['GET', 'POST'])
+@app.route("/welcome")
+def welcome():
     return render_template("index.html")
 
 if __name__ == '__main__':
