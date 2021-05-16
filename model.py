@@ -1,5 +1,5 @@
 import sqlite3
-from tabulate import tabulate
+#from tabulate import tabulate
 from flask import Flask, render_template
 from werkzeug.exceptions import abort
 from sklearn.linear_model import LogisticRegression 
